@@ -1,13 +1,32 @@
-console.log("peepee poopoo");
+import { createPage } from "./home.js";
+import { loadMenu } from "./menu.js";
+import { loadAbout } from "./about.js";
 
-let pageContent = document.getElementById("content");
+createPage();
 
-let title = document.createElement("h1");
-title.textContent = "Pizza Palace";
-pageContent.appendChild(title);
+function clearPage() {
+  let content = document.getElementById("content");
+  content.innerHTML = ``;
+}
 
-let blurb = document.createElement("p");
-blurb.textContent = `Pizza Palace is a family-owned New York style pizzeria in 
-Bellevue, TN. We specialize in thin crust pizzas and make our sauce and dough in-house.
-Ask us about our two-for-one special! We look forward to seeing you!`
-pageContent.appendChild(blurb);
+function buttonEvents() {
+  let menuButton = document.getElementById("menu-button");
+  menuButton.addEventListener("click", (e) => {
+    clearPage();
+    loadMenu();
+  });
+
+  let homeButton = document.getElementById("home-button");
+  homeButton.addEventListener("click", (e) => {
+    clearPage();
+    createPage();
+  });
+
+  let aboutButton = document.getElementById("about-button");
+  aboutButton.addEventListener("click", (e) => {
+    clearPage();
+    loadAbout();
+  });
+}
+
+buttonEvents();
