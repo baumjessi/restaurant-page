@@ -3,6 +3,7 @@ export function createPage() {
     //create title 
     let title = document.createElement("h1");
     title.textContent = "Pizza Palace";
+    title.id = "title";
     pageContent.appendChild(title);
     //create blurb
     let blurb = document.createElement("p");
