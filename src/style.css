@@ -1,0 +1,9 @@
+html, body {
+    color: black;
+    background: url('/src/pizza-bg.jpg');
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.262);
+    text-align: center;
+}
