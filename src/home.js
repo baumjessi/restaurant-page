@@ -1,3 +1,5 @@
+import Arrow from "./order-button-arrow.png";
+
 export function createPage() {
     let pageContent = document.getElementById("content");
     //create title 
@@ -5,14 +7,25 @@ export function createPage() {
     title.textContent = "Pizza Palace";
     title.id = "title";
     pageContent.appendChild(title);
-    //create blurb
-    let blurb = document.createElement("p");
-    blurb.textContent = `Pizza Palace is a family-owned New York style pizzeria in 
-    Bellevue, TN. We specialize in thin crust pizzas and make our sauce and dough in-house.
-    Ask us about our two-for-one special! We look forward to seeing you!`
-    pageContent.appendChild(blurb);
-    //create footer
-    let footer = document.createElement("p");
-    footer.textContent = "Created by Jessi B. for the Odin Project";
-    pageContent.appendChild(footer);
+
+    //create order button
+    let orderBtnArrow = new Image();
+    orderBtnArrow.src = Arrow;
+    orderBtnArrow.className = "order-button-arrow";
+
+    let orderBtn = document.createElement("button");
+    orderBtn.id = "home-order-button";
+    orderBtn.className = "order-button";
+
+    let orderBtnDiv = document.createElement("div");
+    orderBtnDiv.className = "order-button-div";
+    let orderBtnText = document.createElement("p");
+    orderBtnText.textContent = "Order Now";
+    orderBtnDiv.appendChild(orderBtnText);
+    orderBtnDiv.appendChild(orderBtnArrow);
+    orderBtn.appendChild(orderBtnDiv);
+  
+    pageContent.appendChild(orderBtn);
+    pageContent.id = "content";
+    pageContent.className = "home-content";
 }

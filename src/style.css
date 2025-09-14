@@ -1,23 +1,141 @@
-html, body {
-    color: black;
-    background: url('/src/pizza-bg.jpg');
+@font-face {
+  font-family: "Air America";
+  src: url("/src/airamerica-regular-webfont.woff");
+}
+
+html {
+  background: url("/src/pizza-bg.jpg");
+  background-color: rgba(0, 0, 0, 0.486);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+html,
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
-    background-color: black;
-    text-align: center;
-    color: white;
+  background-color: black;
+  text-align: center;
+  color: white;
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-family: "Air America";
+}
+
+.title-div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-icon {
+  width: 3rem;
+  height: 3rem;
 }
 
 button {
-    background: black;
-    color: white;
-    border-radius: 8px;
-    border: red 1px solid;
-    padding: 30px;
+  background: black;
+  color: white;
+  border-radius: 90px;
+  border: none;
+  padding: 30px;
+  margin: 10px;
 }
 
 #title {
-    font-size: 12rem;
-    color: white;
+  font-size: 12rem;
+  color: white;
+  font-family: "Air America", system-ui, -apple-system, BlinkMacSystSemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.order-button {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 90px;
+  padding: 20px;
+  margin-top: -100px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.order-button:hover {
+  background-color: rgb(52, 27, 27);
+}
+
+.order-button-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.order-button-arrow {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.menu-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px auto 50px;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.menu-item {
+  padding: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.menu-item h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.menu-item-image {
+  width: 200px;
+  height: 200px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
