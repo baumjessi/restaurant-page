@@ -26,16 +26,11 @@ veggieLoverImg.src = VeggieLover;
 veggieLoverImg.className = "menu-item-image";
 
 export function loadMenu() {
+    //create title
     let title = document.createElement("h1");
-    title.textContent = "Pizza Palace";
-    //create blurb
-    let blurb = document.createElement("p");
-    blurb.textContent = `All pies come in 8-inch, 12-inch, and 16-inch sizes. Each pie is blanketed in our 
-    tangy marinara sauce, which is made in-house daily. Toppings
-    can be removed or swapped, and additional toppings can added at a small cost. Take 
-    a look at our many delicious choices below!`
-
-
+    title.textContent = "Our Menu";
+    title.className = "menu-title";
+    
     //create menu items
     let item1Div = document.createElement("div");
     item1Div.className = "menu-item";
@@ -93,6 +88,7 @@ export function loadMenu() {
     content.className = "menu-content";
     let menuDiv = document.createElement("div");
     menuDiv.className = "menu-div";
+    content.appendChild(title);
     content.appendChild(menuDiv);
     menuDiv.appendChild(item1Div);
     menuDiv.appendChild(item2Div);
