@@ -113,7 +113,7 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto;
   gap: 20px;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .menu-item {
@@ -254,4 +254,9 @@ footer {
   justify-content: space-between;
   align-items: bottom;
   margin-top: 2rem;
+}
+
+.footer-order-button {
+  color: white;
+  background-color: black;
 }

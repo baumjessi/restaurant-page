@@ -3,7 +3,8 @@ import Marg from './margherita.png';
 import Cheese from './cheese.png';
 import MeatLover from './meat-lover.png';
 import VeggieLover from './veggie-lover.png';
-import AddToCart from './add-cart.png'
+import AddToCart from './add-cart.png';
+import Pepperoni from './pepperoni.png';
 
 //create images
 const supremeImg = new Image();
@@ -25,6 +26,10 @@ meatLoverImg.className = "menu-item-image";
 const veggieLoverImg = new Image();
 veggieLoverImg.src = VeggieLover;
 veggieLoverImg.className = "menu-item-image";
+
+const pepperoniImg = new Image();
+pepperoniImg.src = Pepperoni;
+pepperoniImg.className = "menu-item-image";
 
 //create array for select menu
 const selectArray = [`8 in. for $12.99`, `12 in. for $16.99`, `16 in. for 19.99`];
@@ -168,6 +173,32 @@ export function loadMenu() {
     cartSelectDiv5.appendChild(item5Select);
     cartSelectDiv5.appendChild(item5Cart);
     
+    let item6Div = document.createElement("div");
+    item6Div.className = "menu-item";
+    let item6 = document.createElement("h2");
+    item6.textContent = "Pepperoni";
+    let item6Toppings = document.createElement("p");
+    item6Toppings.textContent = "Marinara, pepperoni, and mozzarella cheese";
+    const item6Cart = new Image();
+    item6Cart.src = AddToCart;
+    item6Cart.className = "add-to-cart";
+    var item6Select = document.createElement("select");
+    item6Select.className = "select-menu";
+    for (var i = 0; i < selectArray.length; i++) {
+        var option = document.createElement("option");
+        option.value = selectArray[i];
+        option.text = selectArray[i];
+        item6Select.appendChild(option);
+    }
+    item6Div.appendChild(pepperoniImg);
+    item6Div.appendChild(item6);
+    item6Div.appendChild(item6Toppings);
+    let cartSelectDiv6 = document.createElement("div");
+    cartSelectDiv6.className = "cart-select-div";
+    item6Div.appendChild(cartSelectDiv6);
+    cartSelectDiv6.appendChild(item6Select);
+    cartSelectDiv6.appendChild(item6Cart);
+
     //append everything to page
     let content = document.getElementById("content");
     content.className = "menu-content";
@@ -180,4 +211,5 @@ export function loadMenu() {
     menuDiv.appendChild(item3Div);
     menuDiv.appendChild(item4Div);
     menuDiv.appendChild(item5Div);
+    menuDiv.appendChild(item6Div);
 };
