@@ -1,12 +1,9 @@
 import { createPage } from "./home.js";
 import { loadMenu } from "./menu.js";
 import { loadAbout } from "./about.js";
-import "/src/style.css";
-import pizzaBg from "/src/pizza-bg.jpg";
+import "./style.css";
 
 createPage();
-
-document.body.style.backgroundImage = "url('/src/pizza-bg.jpg')";
 
 function clearPage() {
   let content = document.getElementById("content");

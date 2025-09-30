@@ -1,4 +1,4 @@
-import Arrow from "./order-button-arrow.png";
+import Arrow from "./assets/order-button-arrow.png";
 
 export function createPage() {
     let pageContent = document.getElementById("content");

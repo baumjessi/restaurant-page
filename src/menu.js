@@ -1,10 +1,10 @@
-import Supreme from "./supreme.png";
-import Marg from "./margherita.png";
-import Cheese from "./cheese.png";
-import MeatLover from "./meat-lover.png";
-import VeggieLover from "./veggie-lover.png";
-import AddToCart from "./add-cart.png";
-import Pepperoni from "./pepperoni.png";
+import Supreme from "./assets/supreme.png";
+import Marg from "./assets/margherita.png";
+import Cheese from "./assets/cheese.png";
+import MeatLover from "./assets/meat-lover.png";
+import VeggieLover from "./assets/veggie-lover.png";
+import AddToCart from "./assets/add-cart.png";
+import Pepperoni from "./assets/pepperoni.png";
 
 //create images
 const supremeImg = new Image();
