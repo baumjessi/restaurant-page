@@ -24,35 +24,182 @@ body {
 }
 
 header {
-  background-color: black;
-  text-align: center;
-  color: white;
   position: sticky;
   top: 0;
 }
 
+header h1,
+.footer-right-column p,
+.footer-left-column p,
+.about-div h1,
+.about-title,
+.menu-title,
+#title {
+  font-family: "Air America", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
 
-nav {
+footer,
+.order-button,
+.menu-item,
+.menu-item h2,
+.about-div p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header,
+button,
+footer,
+.menu-item,
+.order-button,
+.select-menu {
+  background-color: black;
+}
+
+header,
+button,
+footer,
+.odin-blurb,
+#title,
+.order-button,
+.menu-item,
+.menu-title,
+.select-menu,
+.about-title,
+.about-div {
+  color: white;
+}
+
+header,
+.odin-blurb,
+.menu-item,
+.menu-title {
+  text-align: center;
+}
+
+.footer-hours th,
+.footer-right-column p,
+.footer-left-column p {
+  text-align: left;
+}
+
+.socials-icon,
+.footer-hours th,
+td {
+  padding: 4px;
+}
+
+nav,
+.title-div,
+.footer-div,
+.footer-left-column,
+.order-button div,
+.home-content,
+.menu-item,
+.cart-select-div,
+.about-div {
   display: flex;
-  justify-content: space-between;
+}
+
+.title-div,
+.order-button-div,
+.home-content,
+.about-div,
+nav {
   align-items: center;
-  padding: 1rem;
+}
+
+.footer-hours td,
+.order-button,
+.about-div p {
+  font-size: 1rem;
+}
+
+.socials-icon:hover,
+.order-button:hover,
+.add-to-cart:hover,
+.button-div button:hover {
+  cursor: pointer;
+}
+
+.order-button,
+.menu-item h2 {
+  text-transform: uppercase;
+}
+
+.footer-left-column,
+.home-content,
+.menu-item {
+  flex-direction: column;
+}
+
+.order-button-div,
+.menu-item,
+.cart-select-div,
+nav {
+  justify-content: space-between;
+}
+
+.about-div,
+.home-content {
+  justify-content: center;
+}
+
+.order-button,
+.menu-item h2 {
+  font-style: italic;
+}
+
+.socials-icon,
+#footer-arrow,
+.add-to-cart {
+  width: auto;
+}
+
+.socials-icon,
+.add-to-cart {
+  height: 2rem;
+}
+
+.menu-div,
+nav {
   padding-left: 4rem;
+}
+
+footer,
+.order-button
+{
+  padding-left: 6rem;
+}
+
+.socials-icon,
+.footer-right-column p,
+.footer-left-column p
+{
+padding-bottom: 1rem;
+}
+
+nav,
+footer,
+.order-button {
   padding-right: 6rem;
 }
 
-header h1 {
-  font-family: "Air America";
+button {
+  border-radius: 90px;
+  border: none;
+  padding: 30px;
+  margin: 1rem;
 }
 
 .button-div button:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
-.title-div {
-  display: flex;
-  align-items: center;
+.title-div,
+.order-button-div {
   gap: 1rem;
 }
 
@@ -61,49 +208,65 @@ header h1 {
   height: 3rem;
 }
 
-button {
-  background: black;
-  color: white;
-  border-radius: 90px;
-  border: none;
-  padding: 30px;
-  margin: 1rem;
+footer {
+  margin-top: 12rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footer-div {
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 8rem;
+}
+
+.odin-blurb {
+  padding-top: 6rem;
+  font-size: 0.75rem;
+}
+
+#footer-arrow {
+  height: 0.75rem;
+  padding-left: 1ch;
+}
+
+.footer-hours {
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 500px;
+}
+
+.footer-hours th {
+  font-size: 1.25rem;
+}
+
+.footer-left-column {
+  justify-content: flex-start;
+}
+
+.footer-right-column p,
+.footer-left-column p {
+  font-size: 2rem;
+  padding-bottom: 8px;
+  color: var(--yellow);
+}
+
+.footer-left-column div {
+  padding-bottom: 1rem;
 }
 
 #title {
   font-size: 12rem;
-  color: white;
-  font-family: "Air America", system-ui, -apple-system, BlinkMacSystSemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
 }
 
 .order-button {
-  color: white;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-style: italic;
   font-weight: bold;
-  background-color: black;
   border-radius: 90px;
-  padding: 20px;
-  padding-left: 6rem;
-  padding-right: 6rem;
   margin-top: -100px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .order-button:hover {
   background-color: rgb(37, 13, 13);
-  cursor: pointer;
-}
-
-.order-button-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
 }
 
 .order-button-arrow {
@@ -112,10 +275,6 @@ button {
 }
 
 .home-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 1px;
 }
 
@@ -124,29 +283,16 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto;
   gap: 20px;
-  padding-left: 4rem;
   padding-right: 4rem;
 }
 
 .menu-item {
   padding: 3rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: black;
-  color: white;
-  text-align: center;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .menu-item h2 {
   color: var(--yellow);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: italic;
-  text-transform: uppercase;
 }
 
 .menu-item-image {
@@ -154,201 +300,38 @@ button {
   height: 200px;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 12rem;
-  padding-top: 4rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  padding-bottom: 4rem;
-}
-
-.socials-icon {
-  height: 2rem;
-  width: auto;
-  padding: 4px;
-  padding-bottom: 1rem;
-}
-
-.socials-icon:hover {
-  cursor: pointer;
-}
-
-.footer-div {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  gap: 8rem;
-}
-
-/* about.js */
-
-.about-photo {
-  height: 300px;
-  width: auto;
-}
-
-.about-photo-div {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.about-title {
-  font-family: "Air America", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  color: white;
-  font-size: 6rem;
-}
-
-.specials-div {
-  background-color: black;
-  color: white;
-  padding: 3rem;
-  border-radius: 8px;
-}
-
-.specials-div h2 {
-  font-family: "Air America", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 3rem;
-}
-
-.specials-div p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.about-div {
-  color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 2rem;
-}
-
-.about-div h1 {
-  font-family: "Air America", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 7rem;
-  padding: 4rem;
-}
-
-.about-div p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  line-height: 2.5;
-  width: 75ch;
-}
-
 .menu-title {
-  font-family: "Air America", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
   font-size: 4rem;
-  color: white;
-  text-align: center;
-}
-
-.add-to-cart {
-  height: 2rem;
-  width: auto;
-}
-
-.add-to-cart:hover {
-  cursor: pointer;
 }
 
 .select-menu {
-  background-color: black;
-  color: white;
   border: solid 1px white;
   padding: 6px;
   border-radius: 4px;
 }
 
 .cart-select-div {
-  display: flex;
-  justify-content: space-between;
   align-items: bottom;
   margin-top: 2rem;
 }
 
-#footer-order-button {
-  color: white;
-  background-color: black;
-  border: var(--yellow, 0.05);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  text-transform: uppercase;
+.about-title {
+  font-size: 6rem;
 }
 
-.odin-blurb {
-  text-align: center;
-  padding-top: 6rem;
-  color: white;
-  font-size: .75rem;
+.about-div {
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 2rem;
+  margin: 2rem;
 }
 
-#footer-arrow {
-  height: 0.75rem;
-  width: auto;
-  padding-left: 1ch;
+.about-div h1 {
+  font-size: 7rem;
+  padding: 4rem;
 }
 
-.footer-right-column p,
-.footer-left-column p {
-  font-family: "Air America", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  padding-bottom: 8px;
-  color: var(--yellow);
-  text-align: left;
-  margin: 0;
-  padding-bottom: 1rem;
-}
-
-.footer-hours th {
-  text-align: left;
-}
-
-.footer-hours th, td {
-  padding: 4px;
-}
-
-.footer-hours th {
- font-size: 1.25rem;
-}
-
-.footer-hours td {
-  font-size: 1rem;
-}
-
-.footer-left-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.footer-hours {
-  border-collapse: collapse;
-  margin: 25px 0;
-  min-width: 500px;
-  margin: 0;
-}
-
-.footer-left-column div {
-  padding-bottom: 1rem;
+.about-div p {
+  line-height: 2.5;
+  width: 75ch;
 }
