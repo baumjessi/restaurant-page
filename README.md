@@ -13,8 +13,8 @@ through JS modules.
 
 ## Media
 ### BG, Font, & Icons
-- Background image
-- Font:
+- [Background Image](https://unsplash.com/photos/a-display-case-filled-with-lots-of-pizzas-3bdXRhUdYtw)
+- [Font](https://www.fontsquirrel.com/fonts/air-america)
 - [Header Icon](https://www.flaticon.com/free-icon/pizza_161554?term=pizza&page=1&position=72&origin=search&related_id=161554)
 - [FB Icon](https://www.flaticon.com/free-icon/facebook_3669678?term=facebook&page=1&position=20&origin=search&related_id=3669678)
 - [Instagram Icon](https://www.flaticon.com/free-icon/instagram_1384015?term=instagram&page=1&position=6&origin=search&related_id=1384015)
@@ -24,11 +24,12 @@ through JS modules.
 - [Order Button Arrow](https://www.flaticon.com/free-icon/fast-forward_724927?term=arrow&page=1&position=4&origin=search&related_id=724927)
 
 ### Pizza Images
-- [Margherita](https://unsplash.com/photos/pizza-on-brown-wooden-table-PKfz98depf0)
+- [Cheese](https://unsplash.com/photos/a-pizza-sitting-on-top-of-a-wooden-cutting-board-7wM-Ad3p56E)
+- [Pepperoni](https://unsplash.com/photos/a-pepperoni-pizza-sitting-on-top-of-a-wooden-cutting-board-xIqVfW8XUt4)
 - [Supreme](https://unsplash.com/photos/a-pizza-sitting-on-top-of-a-piece-of-paper-pWqMo3bhv3A?modal=%5B%22Subscribe%22%2C%7B%22sourceAsset%22%3A%5B%22Photos%22%2C%7B%22slug%22%3A%22a-pizza-sitting-on-top-of-a-piece-of-paper-pWqMo3bhv3A%22%7D%5D%7D%5D)
+- [Margherita](https://unsplash.com/photos/pizza-on-brown-wooden-table-PKfz98depf0)
 - [Meat Lover](https://unsplash.com/photos/pizza-with-cheese-and-tomato-_P76trHTWDE)
 - [Veggie Lover](https://unsplash.com/photos/a-pizza-sitting-on-top-of-a-wooden-cutting-board-50oL45AbE74;)
-- [Pepperoni](https://unsplash.com/photos/a-pepperoni-pizza-sitting-on-top-of-a-wooden-cutting-board-xIqVfW8XUt4)
 
 ## Contact
 If you would like to contact me, you can email me at hellojessib@outlook.com. Thanks for viewing this repo! 
