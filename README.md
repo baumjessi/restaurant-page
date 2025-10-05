@@ -29,7 +29,7 @@ through JS modules.
 - [Supreme](https://unsplash.com/photos/a-pizza-sitting-on-top-of-a-piece-of-paper-pWqMo3bhv3A?modal=%5B%22Subscribe%22%2C%7B%22sourceAsset%22%3A%5B%22Photos%22%2C%7B%22slug%22%3A%22a-pizza-sitting-on-top-of-a-piece-of-paper-pWqMo3bhv3A%22%7D%5D%7D%5D)
 - [Margherita](https://unsplash.com/photos/pizza-on-brown-wooden-table-PKfz98depf0)
 - [Meat Lover](https://unsplash.com/photos/pizza-with-cheese-and-tomato-_P76trHTWDE)
-- [Veggie Lover](https://unsplash.com/photos/a-pizza-sitting-on-top-of-a-wooden-cutting-board-50oL45AbE74;)
+- [Veggie Lover](https://unsplash.com/photos/a-pizza-sitting-on-top-of-a-wooden-cutting-board-50oL45AbE74)
 
 ## Contact
 If you would like to contact me, you can email me at hellojessib@outlook.com. Thanks for viewing this repo! 
