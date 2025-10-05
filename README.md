@@ -4,7 +4,7 @@ by Jessi B. for the Odin Project
 
 ## What is this?
 
-[Click here to view the live site!](http://www.baumjessi.github.io/restaurant-page)
+[Click here to view the live site!](https://baumjessi.github.io/restaurant-page/)
 
 This is a simple restaurant page design with home, about, and menu pages. This project was
 an introduction to Webpack workflow with an emphasis on writing in the webpack.config.js file
