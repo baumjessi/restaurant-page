@@ -11,6 +11,9 @@ an introduction to Webpack workflow with an emphasis on writing in the webpack.c
 and installing various modules. The majority of this website's HTML content is generated 
 through JS modules.
 
+We have yet to cover front-end scalability across devices in the Odin curriculum. This site is
+best viewed on a desktop computer or laptop.
+
 ## Media
 ### BG, Font, & Icons
 - [Background Image](https://unsplash.com/photos/a-display-case-filled-with-lots-of-pizzas-3bdXRhUdYtw)
